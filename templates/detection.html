@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>CARDIOVASCULAR DISEASE</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Favicons -->
+    <link href="static/img/favicon.png" rel="icon">
+    <link href="static/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="static/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="static/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="static/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="static/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="static/css/style.css" rel="stylesheet">
+
+
+</head>
+<style>
+body {
+  background-image: url('static/images/h.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+h2 {
+  text-shadow: 2px 2px 5px black;
+}
+</style>
+<body>
+
+<!-- ======= Header ======= -->
+<header id="header" class="d-flex align-items-center">
+    <div class="logo">
+        <h1><a href="index.html">Cardiovascular</a></h1>
+
+    </div>
+
+    <nav id="navbar" class="navbar">
+        <ul>
+            <li><a class="active" href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/prediction">Training</a></li>
+            <li><a href="/detection">Detection</a></li>
+
+            </li>
+            <!--          <li><a href="contact.html">Contact</a></li>-->
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav><!-- .navbar -->
+
+    <div class="container d-flex justify-content-between align-items-center">
+
+
+    </div>
+</header><!-- End Header -->
+
+<!-- ======= About Section ======= -->
+<section id="about" class="about" style="padding-top: 250px;">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-6">
+                <!--            <img src="static/images/slide-1.jpg" class="img-fluid" alt=""width="1500" height="400">-->
+            </div>
+            <div class="col-lg-6 pt-4 pt-lg-0 content">
+            </div></div></div>
+
+    <center><h1 style="margin-bottom:50px;">{{ msg|safe}}
+        </h1></center>
+
+    <form action="/detection" method="POST" >
+        <div class="container">
+            <div class = "row">
+                <div class="col-md-1">
+                    <label for="Age" style=" margin-right: 10px;color:white;font-size:20px;">Age</label>
+                </div>
+                <div class="col-md-3">
+                    <input name="age" type="number" placeholder="Age" id="Age">
+                </div>
+                <div class="col-md-1">
+                    <label for="sex" style=" margin-right: 10px;color:white;font-size:20px;">sex</label>
+                </div>
+                <div class="col-md-3">
+
+                    <input name="sex" type="number" placeholder="sex" id="sex">
+                </div>
+                <div class="col-md-1">
+                    <label for="cp" style=" margin-right: 10px;color:white;font-size:20px;">cp</label>
+                </div>
+                <div class="col-md-3">
+
+                    <input name="cp" type="number" placeholder="cp" style=" margin-bottom: 20px;" id="cp">
+                </div>
+            </div>
+
+
+            <div class = "row">
+                <div class="col-md-1">
+                    <label for="trestbps" style=" margin-right: 10px;color:white;font-size:20px;">trestbps</label>
+                </div>
+                <div class="col-md-3">
+                    <input name="tresthps" type="number" placeholder="trestbps" id="trestbps"><br>
+                </div>
+                <div class="col-md-1">
+                    <label for="chol" style=" margin-right: 10px;color:white;font-size:20px;">chol</label>
+                </div>
+                <div class="col-md-3">
+
+                    <input name="cho" type="number" placeholder="chol" id="chol"><br>
+                </div>
+                <div class="col-md-1">
+                    <label for="fbs" style=" margin-right: 10px;color:white;font-size:20px;">fbs</label>
+                </div>
+                <div class="col-md-3">
+
+                    <input name="fbs" type="number" placeholder="fbs" style=" margin-bottom: 20px;" id="fbs">
+                </div>
+            </div>
+
+
+            <div class = "row">
+                <div class="col-md-1">
+                    <label for="restecg" style=" margin-right: 10px;color:white;font-size:20px;">restecg</label>
+                </div>
+
+                <div class="col-md-3">
+
+                    <input name="restecg" type="number" placeholder="restecg" id="restecg"><br>
+                </div>
+                <div class="col-md-1">
+                    <label for="thalach" style=" margin-right: 10px;color:white;font-size:20px;">thalach</label>
+                </div>
+                <div class="col-md-3">
+                    <input name="thalach" type="number" placeholder="thalach" id="thalach"><br>
+                </div>
+                <div class="col-md-1">
+                    <label for="exang" style=" margin-right: 10px;color:white;font-size:20px;">Thal</label>
+                </div>
+                <div class="col-md-3">
+                    <input name="exang" type="number" placeholder="exang" style=" margin-bottom: 20px;" id="exang">
+                </div>
+            </div>
+
+
+            <div class = "row">
+                <div class="col-md-1">
+                    <label for="oldpeak" style=" margin-right: 10px;color:white;font-size:20px;">oldpeak</label>
+                </div>
+                <div class="col-md-3">
+                    <input name="oldpeak" type="number" placeholder="oldpeak" id="oldpeak">
+                </div>
+                <div class="col-md-1">
+                    <label for="slope" style=" margin-right: 10px;color:white;font-size:20px;">slope</label>
+                </div>
+                <div class="col-md-3">
+
+                    <input name="slope" type="number" placeholder="slope" id="slope">
+                </div>
+                <div class="col-md-1">
+                    <label for="ca" style=" margin-right: 10px;color:white;font-size:20px;">ca</label>
+                </div>
+                <div class="col-md-3">
+
+                    <input name="ca" type="number" placeholder="ca"style=" margin-bottom: 20px;" id="ca">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-3"></div>
+                <div class="col-md-1">
+                    <label for="thal" style=" margin-right: 10px;color:white;font-size:20px;">Thal</label>
+                </div>
+                <div class="col-md-3">
+                    <input name="thal" type="number"  placeholder="thal" id="thal" >
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-3"></div>
+            </div>
+        </div>
+        </div>
+
+        </div>
+
+
+
+
+
+        <br><br><br>
+        <div>
+            <center>
+                <input type="submit"  value="submit"></input>
+            </center>
+        </div>
+
+    </form>
+</section></nav></div></header></body>

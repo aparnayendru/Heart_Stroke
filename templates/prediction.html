@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>CARDIOVASCULAR DISEASE</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="static/img/favicon.png" rel="icon">
+  <link href="static/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="static/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="static/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="static/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="static/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="static/css/style.css" rel="stylesheet">
+
+</head>
+<style>
+body {
+  background-image: url('static/images/slide-1.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+h2 {
+  text-shadow: 2px 2px 5px black;
+}
+</style>
+<body>
+<!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex justify-content-between align-items-center">
+
+      <div class="logo">
+        <h1><a href="index.html">Cardiovascular</a></h1>
+
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="active" href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/prediction">Training</a></li>
+          <li><a href="/detection">detection</a></li>
+
+          </li>
+<!--          <li><a href="contact.html">Contact</a></li>-->
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+<!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-6">
+<!--            <img src="static/images/slide-1.jpg" class="img-fluid" alt=""width="1500" height="400">-->
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 content">
+          </div></div></div>
+<!--<BR CLEAR=”right" />-->
+         <center><h3 style="color:blue">{{msg}}</h3></center>
+
+<form  action="/prediction" method="POST">
+            <center><h3 style="font-size:50px;padding-top: 250px;">TRAINING</h3></center><br>
+<div>
+    <tr>
+           <center><td><select name="algo" id="algo" style="height: 35px;">
+                        <option value="6">Select</option>
+                          <option value="0">DTBM</option>
+                          <option value="1">RFBM</option>
+                          <option value="2">KNNBM</option>
+                          <option value="3">ADABOST</option>
+                          <option value="4">GRADIENT BOOSTING</option>
+
+           </select>
+           </td>
+    </tr>
+    </center><br>
+</div>
+               <div>
+<!--                      <button type="submit"  value="Submit">Submit</button></h5>-->
+                   <center>
+                       <input type="submit" class="btn btn-primary" value="submit" style="height: 35px;width: 95px;"></input>
+                   </center>
+             </div>
+
+       <input type="button" value="Go back!" onclick="history.back()">
+
+ </form>
+        <!-- End About Section --></section></nav></div></header></body>
